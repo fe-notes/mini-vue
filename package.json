@@ -1,0 +1,38 @@
+{
+  "name": "mini-vue",
+  "type": "module",
+  "author": "Konv Suu <2583695112@qq.com>",
+  "description": "use typescript to reproduce mini-vue",
+  "license": "MIT",
+  "keywords": [
+    "typescript"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "unbuild": "^1.0.1",
+    "vitest": "^0.25.3",
+    "eslint": "^8.33.0",
+    "@kovsu/eslint-config-ts": "^0.2.0"
+  },
+  "eslintConfig": {
+    "extends": "@kovsu/eslint-config-ts"
+  }
+}
