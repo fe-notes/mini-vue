@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "dev": "unbuild --stub",
-    "build": "unbuild"
+    "build": "unbuild",
+    "play": "pnpm -C playground dev"
   },
   "devDependencies": {
     "typescript": "^4.9.3",
