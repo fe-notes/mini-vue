@@ -1,8 +1,8 @@
 {
   "name": "mini-vue",
   "type": "module",
-  "author": "Konv Suu <2583695112@qq.com>",
   "description": "use typescript to reproduce mini-vue",
+  "author": "Konv Suu <2583695112@qq.com>",
   "license": "MIT",
   "keywords": [
     "typescript"
@@ -26,10 +26,10 @@
     "play": "pnpm -C playground dev"
   },
   "devDependencies": {
-    "typescript": "^4.9.3",
-    "unbuild": "^1.0.1",
+    "@kovsu/eslint-config-ts": "^0.2.0",
     "eslint": "^8.33.0",
-    "@kovsu/eslint-config-ts": "^0.2.0"
+    "typescript": "^4.9.3",
+    "unbuild": "^1.0.1"
   },
   "eslintConfig": {
     "extends": "@kovsu/eslint-config-ts"
