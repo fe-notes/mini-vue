@@ -1,4 +1,4 @@
-import { isObject } from "../../utils";
+import { isObject } from "@mini-vue/utils";
 
 export function reactive(target: object) {
   if (!isObject(target))
@@ -6,10 +6,10 @@ export function reactive(target: object) {
 
   const proxy = new Proxy(target, {
     get(target: object, key: string | symbol) {
-      return (target as any)[key];
+      return Reflect.get(target, key);
     },
     set(target: object, key: string | symbol, value: unknown) {
-      (target as any)[key] = value;
+      Reflect.set(target, key, value);
       return true;
     },
   });

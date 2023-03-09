@@ -25,6 +25,10 @@
     "build": "unbuild",
     "play": "pnpm -C playground dev"
   },
+  "dependencies": {
+    "@mini-vue/reactive": "workspace:*",
+    "@mini-vue/utils": "workspace:*"
+  },
   "devDependencies": {
     "@kovsu/eslint-config-ts": "^0.2.0",
     "eslint": "^8.33.0",
